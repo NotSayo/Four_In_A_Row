@@ -1,0 +1,150 @@
+body {
+    margin:0;
+}
+
+h1 {
+    font-size: 45px;
+    grid-area: title;
+}
+
+#top {
+    display: grid;
+    justify-items: center;
+    height: 200px;
+
+    grid-template-areas: 'a title b'
+                         'c restart d'
+}
+
+#Restart {
+    font-size: 20px;
+    height: 40px;
+    grid-area: restart;
+}
+
+#Game {
+    display: grid;
+    justify-items: center;
+
+    grid-template-areas: 'a title b'
+                         'c rows d'
+                         'info game wins';
+}
+
+h2 {
+    grid-area: title;
+}
+
+#Rows {
+    height: 50px;
+    width: 500px;
+    display: grid;
+
+    grid-area: rows;
+    justify-items: center;
+    align-items: center;
+    grid-auto-flow: column;
+}
+
+.choice {
+    display: grid;
+    height: 40px;
+    width: 60px;
+
+    background-color: lightblue;
+    justify-content: center;
+    align-content: center;
+    border-radius: 30%;
+}
+
+#Overlay {
+    height: 400px;
+    width: 500px;
+    z-index: 0;
+    grid-auto-flow: row;
+    padding: 0 5px 0 5px;
+    display: grid;
+
+    grid-area: game;
+    background-color: grey;
+    border: 2px black solid;
+    grid-template-areas: 'C1R1 C2R1 C3R1 C4R1 C5R1 C6R1 C7R1';
+}
+
+#col1 {
+    grid-area: C1R1;
+    margin: 0;
+}
+
+#col2 {
+    grid-area: C2R1;
+}
+
+#col3 {
+    grid-area: C3R1;
+}
+
+#col4 {
+    grid-area: C4R1;
+}
+
+#col5 {
+    grid-area: C5R1;
+}
+
+#col6 {
+    grid-area: C6R1;
+}
+
+#col7 {
+    grid-area: C7R1;
+}
+
+.Slot {
+    background-color: white;
+    height: 55px;  
+    width: 55px;
+    border-radius: 50%;
+    margin: 8px;
+    align-self: center;
+    justify-self: center;
+}
+
+#Information {
+    width: 120px;
+    display: grid;
+    justify-content: flex-start;
+    justify-self: flex-start;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    grid-area: info;
+    line-height: 30px;
+    margin-right: -30px;
+    margin-left: 30px;
+}
+
+.mTitle {
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#colorT {
+    background-color: blue;
+    height: 55px;  
+    width: 55px;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+#Wins {
+    grid-area: wins;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.score {
+    font-size: 18px;
+    margin-left: 10px;
+}

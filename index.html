@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Four in a Row</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="top">
+        <h1>Four in a row</h1>
+        <button id="Restart">RESTART</button>
+    </div>  
+    <div id ="Game">
+        <h2>Which column would you like to go?</h2>
+        <div id="Rows">
+            <div class="choice">1</div>
+            <div class="choice">2</div>
+            <div class="choice">3</div>
+            <div class="choice">4</div>
+            <div class="choice">5</div>
+            <div class="choice">6</div>
+            <div class="choice">7</div>
+        </div>
+
+        <div id="Information">
+            <div id="turn" class="mTitle">
+                Turn: [number]
+            </div>
+            <div id="colorTurn" class="mTitle">
+                It's [color]'s turn
+            </div>
+            <div id="colorT"></div>
+        </div>
+
+        <div id="Wins">
+            <div class = "mTitle">Score:</div>
+            <div id="Player1Wins" class="score"></div>
+            <div id="Player2Wins" class="score"></div>
+        </div>
+
+        <div id="Overlay">
+            <div id="col1">
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+            </div>
+
+            <div id="col2">
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+            </div>
+
+            <div id="col3">
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+            </div>
+
+            <div id="col4">
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+            </div>
+
+            <div id="col5">
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+            </div>
+
+            <div id="col6">
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+            </div>
+
+            <div id="col7">
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+                <div class="Slot"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Scripts-->
+    <script src="js/main.js" type="module"></script>
+    <script src="js/Controller.js" type="module"></script>
+    <script src="js/stats.js" type="module"></script>
+</body>
+</html>
