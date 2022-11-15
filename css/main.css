@@ -113,11 +113,8 @@ h2 {
 #Information {
     width: 120px;
     display: grid;
-    justify-content: flex-start;
     justify-self: flex-start;
     align-self: center;
-    align-items: center;
-    align-content: center;
     grid-area: info;
     line-height: 30px;
     margin-right: -30px;
