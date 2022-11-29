@@ -29,6 +29,7 @@ h1 {
     grid-template-areas: 'a title b'
                          'c rows d'
                          'info game wins';
+    grid-template-columns: [info] 25% [game] 50% [wins] 25%;
 }
 
 h2 {
@@ -148,4 +149,10 @@ h2 {
 
 .line {
     line-height: 30px;
+}
+
+#ResetAllTime {
+    margin-top: 35px;
+    background-color: red;
+    height: 30px;
 }

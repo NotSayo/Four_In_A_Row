@@ -1,5 +1,6 @@
 import {DefineChoices, DefineSlots, SwitchPlayer, CheckWin} from './Controller.js'
-import { ChangeTurn, InsertTurn, ColorChange, ResetStats, DisplayWins, AllTime } from './stats.js';
+import { ChangeTurn, InsertTurn, ColorChange, ResetStats, DisplayWins } from './stats.js';
+import { SetAllTime } from './cookies.js';
 
 //#region variables
 
@@ -14,7 +15,7 @@ const restart = document.getElementById("Restart");
 //#region Functions
 
 function Restart(forced = false) {
-    let confirmation
+    let confirmation    
     if (!forced) {
         confirmation = confirm("Are you sure u want to restart?");
     }
@@ -29,7 +30,7 @@ function Restart(forced = false) {
         slots[i].style.backgroundColor = "";
     }
     player = 0;
-    AllTime();
+    SetAllTime();
     ResetStats();
     ColorChange(colors,player);
     InsertTurn();
@@ -99,7 +100,7 @@ AddEventListeners(choices)
 InsertTurn();
 ColorChange(colors,player);
 DisplayWins();
-AllTime();
+SetAllTime();
 
 
 

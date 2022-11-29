@@ -1,4 +1,5 @@
 import {playerWins} from './stats.js'
+import { AddToAllTime } from './cookies.js';
 
 
 function DefineChoices() {
@@ -43,6 +44,7 @@ function CheckWin(colors, player) {
 
     if (Check1 || Check2 || Check3 || Check4) {
         playerWins[player]++;
+        AddToAllTime(player);
         return true;
     }
 
