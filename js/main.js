@@ -1,5 +1,5 @@
 import {DefineChoices, DefineSlots, SwitchPlayer, CheckWin} from './Controller.js'
-import { ChangeTurn, InsertTurn, ColorChange, ResetStats, DisplayWins } from './stats.js';
+import { ChangeTurn, InsertTurn, ColorChange, ResetStats, DisplayWins, AllTime } from './stats.js';
 
 //#region variables
 
@@ -29,6 +29,7 @@ function Restart(forced = false) {
         slots[i].style.backgroundColor = "";
     }
     player = 0;
+    AllTime();
     ResetStats();
     ColorChange(colors,player);
     InsertTurn();
@@ -98,6 +99,7 @@ AddEventListeners(choices)
 InsertTurn();
 ColorChange(colors,player);
 DisplayWins();
+AllTime();
 
 
 

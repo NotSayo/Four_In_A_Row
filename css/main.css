@@ -145,3 +145,7 @@ h2 {
     font-size: 18px;
     margin-left: 10px;
 }
+
+.line {
+    line-height: 30px;
+}
